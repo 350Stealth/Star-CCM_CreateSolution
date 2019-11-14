@@ -1,17 +1,14 @@
 // STAR-CCM+ macro: RunSimulationGAW2A3a.java
-package macro;
+package OldMacro/*macro*/;
 
 import star.base.neo.DoubleVector;
 import star.base.neo.IntVector;
 import star.base.neo.NeoObjectVector;
 import star.base.report.ExpressionReport;
 import star.common.*;
-import star.dualmesher.DualAutoMesher;
 import star.flow.*;
-import star.meshing.AutoMeshOperation;
 import star.meshing.AutoMeshOperation2d;
 import star.meshing.MeshOperationManager;
-import star.resurfacer.ResurfacerAutoMesher;
 import star.twodmesher.DualAutoMesher2d;
 import star.vis.Scene;
 
@@ -24,7 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class RunSimulationGAW2A3a extends StarMacro {
+//public class RunSimulationGAW2A3a extends StarMacro {
+public class RunSimulationGAW2A3 extends StarMacro {
     
     // Folder path: must contain input text file; all outputs will be located here
     public static final String folder =

@@ -1,5 +1,5 @@
 // STAR-CCM+ macro: RunSimTestA3PlaneModel.java
-package macro;
+package OldMacro/*macro*/;
 
 import star.base.neo.DoubleVector;
 import star.base.neo.IntVector;
@@ -7,12 +7,14 @@ import star.base.neo.NeoObjectVector;
 import star.base.report.ExpressionReport;
 import star.common.*;
 import star.dualmesher.DualAutoMesher;
-import star.flow.*;
+import star.flow.ForceCoefficientReport;
+import star.flow.ForceReport;
+import star.flow.MomentCoefficientReport;
+import star.flow.MomentReport;
 import star.meshing.AutoMeshOperation;
 import star.meshing.MeshOperationManager;
 import star.resurfacer.ResurfacerAutoMesher;
 import star.vis.Scene;
-import star.vis.SceneUpdate;
 
 import javax.swing.*;
 import java.io.*;

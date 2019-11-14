@@ -1,13 +1,13 @@
 // STAR-CCM+ macro: RunSimulationGAW2B3.java
-package macro;
+package OldMacro/*macro*/;
 
-import java.io.*;
-import java.util.*;
-
-import javax.swing.*;
-
+import star.base.neo.DoubleVector;
+import star.base.neo.IntVector;
+import star.base.neo.NeoObjectVector;
+import star.base.report.ExpressionReport;
 import star.common.*;
 import star.dualmesher.DualAutoMesher;
+import star.flow.*;
 import star.meshing.AutoMeshOperation;
 import star.meshing.AutoMeshOperation2d;
 import star.meshing.MeshOperationManager;
@@ -16,10 +16,16 @@ import star.resurfacer.ResurfacerAutoMesher;
 import star.starcad2.StarCadDesignParameterDouble;
 import star.starcad2.StarCadDocument;
 import star.starcad2.StarCadDocumentManager;
-import star.vis.*;
-import star.base.neo.*;
-import star.base.report.*;
-import star.flow.*;
+import star.vis.Scene;
+
+import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class RunSimulationGAW2B3 extends StarMacro {
     
@@ -635,9 +641,9 @@ public class RunSimulationGAW2B3 extends StarMacro {
                             sc.nextDouble();
                         double turbIntence =
                             sc.nextDouble();
-                        
-                        SimData sd =
-                            new SimData(alpha, vel, turbScale, turbVelScale, turbIntence);
+    
+                        SimData sd = null;
+//                            new SimData(alpha, vel, turbScale, turbVelScale, turbIntence);
                         
                         // Add SimData object to list.
                         m_flows.add(sd);

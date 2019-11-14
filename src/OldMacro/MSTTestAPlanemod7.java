@@ -2,16 +2,17 @@
 // Written by STAR-CCM+ 12.02.011
 package OldMacro;
 
-import java.io.*;
-import java.util.*;
+import star.base.neo.ClientServerObjectGroup;
+import star.base.neo.DoubleVector;
+import star.base.neo.IntVector;
+import star.base.neo.NeoObjectVector;
+import star.base.report.ExpressionReport;
+import star.base.report.ReportMonitor;
+import star.common.*;
+import star.flow.*;
+import star.vis.*;
 
 import javax.swing.*;
-
-import star.common.*;
-import star.vis.*;
-import star.base.neo.*;
-import star.base.report.*;
-import star.flow.*;
 
 public class MSTTestAPlanemod7 extends StarMacro {
 	
@@ -179,9 +180,9 @@ public class MSTTestAPlanemod7 extends StarMacro {
 				X = "X", 
 				Y = "Y", 
 				Cmz = "Cmz", 
-				Mz = "Mz", 
-				K = "K", 
-				NameCPU = "Время ЦПУ", 
+				Mz = "Mz",
+			K = "K",
+			NameCPU = "Время ЦПУ",
 				NameElapsed = "Затраченное время ЦПУ";
 		public Boundary
 				boundary_0 = null,
