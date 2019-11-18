@@ -1953,5 +1953,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="src" level="project" />
   </component>
 </module>
