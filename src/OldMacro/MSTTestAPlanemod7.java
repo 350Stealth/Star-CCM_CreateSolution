@@ -167,28 +167,28 @@ public class MSTTestAPlanemod7 extends StarMacro {
 	*/
 	public class MakeReports {
 		public static final String
-				sPressure = "p", 
-				sShear = "s";
+			sPressure = "p",
+			sShear = "s";
 		public static final String
-				GroupName_0 = "Группа: Норма", 
-				GroupName_1 = "Группа: Давление", 
-				GroupName_2 = "Группа: сдвиг", 
-				GroupAnnotationsName = "Группа: Аннотации";
+			GroupName_0 = "Группа: Норма",
+			GroupName_1 = "Группа: Давление",
+			GroupName_2 = "Группа: сдвиг",
+			GroupAnnotationsName = "Группа: Аннотации";
 		public static final String
-				Cx = "Cx", 
-				Cy = "Cy", 
-				X = "X", 
-				Y = "Y", 
-				Cmz = "Cmz", 
-				Mz = "Mz",
+			Cx = "Cx",
+			Cy = "Cy",
+			X = "X",
+			Y = "Y",
+			Cmz = "Cmz",
+			Mz = "Mz",
 			K = "K",
 			NameCPU = "Время ЦПУ",
-				NameElapsed = "Затраченное время ЦПУ";
+			NameElapsed = "Затраченное время ЦПУ";
 		public Boundary
-				boundary_0 = null,
-				boundary_1 = null;
+			boundary_0 = null,
+			boundary_1 = null;
 		public Region
-				region_Main = null;
+			region_Main = null;
 
 		
 	//Конструктор
@@ -250,8 +250,8 @@ public class MSTTestAPlanemod7 extends StarMacro {
 		
 		private void MakeCx(Simulation theSim, int flag, String name, CartesianCoordinateSystem UsedLocCS) {
 			
-			ForceCoefficientReport fCR_Cx = 
-			  theSim.getReportManager().createReport(ForceCoefficientReport.class);
+			ForceCoefficientReport fCR_Cx =
+				theSim.getReportManager().createReport(ForceCoefficientReport.class);
 
 			fCR_Cx.setPresentationName(name);
 			
